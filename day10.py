@@ -20,7 +20,7 @@ def part1():
     return result
 
 def print_pixel(cycle, result, register):
-    result += '#' if abs(register + 1 - (cycle % 40)) <= 1 else '.'
+    result += '█' if abs(register + 1 - (cycle % 40)) <= 1 else ' '
     result += '\n' if cycle % 40 == 0 else ''
     return result
 
